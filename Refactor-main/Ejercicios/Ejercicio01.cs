@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Ejercicio01 : MonoBehaviour
 {
-    public float Fuerza = 100f;
+    public valorFueza
+    public float Fuerza = valorFueza;
     private Rigidbody2D rb2d;
     private void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        personaje = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -19,7 +20,7 @@ public class Ejercicio01 : MonoBehaviour
 
         Vector2 Velocidad = new Vector2(x, y);
 
-        rb2d.AddForce(Velocidad * Fuerza * Time.deltaTime);
+        personaje.AddForce(Velocidad * Fuerza * Time.deltaTime);
 
     }
 }
