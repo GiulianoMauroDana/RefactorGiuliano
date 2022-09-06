@@ -7,16 +7,16 @@ public class Ejercicio03 : MonoBehaviour
     int resistencia;
     int vida;
 
-    void RacibirDa�o(int da�o)
+    void RecibirDaño(int daño)
     {
-     
+        int dañonuevo = daño;
         if (resistencia > 5)
         {
-            da�o -= 2;
+            dañonuevo -= 2;
 
         }
 
-        vida -= da�o;
+        vida -= dañonuevo;
         
     }
 }
