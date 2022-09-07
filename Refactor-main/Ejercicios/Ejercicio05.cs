@@ -6,12 +6,12 @@ public class Ejercicio05 : MonoBehaviour
 {
     [Range(1, 20)]
     int Probabilidad_Critico;
+    int Dado = Random.Range(0, Probabilidad_Critico);
+    int valorGolpeCritico;
+    public void DaÃ±oCritico()
+    {       
 
-    public void DañoCritico()
-    {
-        int Dado = Random.Range(0, Probabilidad_Critico);
-
-        if (Dado > 15)
+        if (Dado > valorGolpeCritico)
         {
             Debug.Log("Golpe Critico");
         }
